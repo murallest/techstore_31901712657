@@ -1,0 +1,152 @@
+/* ============================================================
+   TechStore — acerca_31901712657.css
+   ============================================================ */
+
+.about-hero_31901712657 {
+  padding: 4rem 2.5rem 2.5rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(123,94,248,0.07) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Team Section ── */
+.team-section_31901712657 {
+  padding: 4rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.team-grid_31901712657 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.team-card_31901712657 {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 340px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.team-card_31901712657::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+}
+.team-card_31901712657:hover {
+  transform: translateY(-6px);
+  border-color: rgba(123,94,248,0.4);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.5);
+}
+.team-avatar_31901712657 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  border: 3px solid var(--border);
+  box-shadow: 0 0 24px rgba(123,94,248,0.3);
+}
+.team-card_31901712657 h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-bottom: 0.25rem;
+}
+.team-role_31901712657 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.team-info_31901712657 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.team-info-row_31901712657 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.82rem;
+}
+.team-info-row_31901712657 .info-label_31901712657 {
+  color: var(--muted);
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.team-info-row_31901712657 .info-value_31901712657 {
+  color: var(--text);
+  word-break: break-all;
+}
+
+/* ── About Company ── */
+.about-company_31901712657 {
+  background: var(--bg2);
+  padding: 4rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.about-company-inner_31901712657 {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.about-stat_31901712657 {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+.about-stat_31901712657:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+}
+.about-stat_31901712657 .stat-num_31901712657 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.about-stat_31901712657 p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .about-hero_31901712657,
+  .team-section_31901712657,
+  .about-company_31901712657 { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .about-company-inner_31901712657 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .about-company-inner_31901712657 { grid-template-columns: 1fr; }
+}
